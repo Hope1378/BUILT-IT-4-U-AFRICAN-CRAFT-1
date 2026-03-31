@@ -38,11 +38,15 @@ export default function Navbar() {
   }, [location])
 
   useEffect(() => {
-    if (!menuOpen) {
-      return undefined
+    if (menuOpen && isMobile) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
     }
-    return undefined
-  }, [menuOpen])
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen, isMobile])
 
   const toneClass = isOverlay ? 'navbar__tone--light' : 'navbar__tone--dark'
 

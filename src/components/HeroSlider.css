@@ -1,5 +1,16 @@
   .hero-slider {
-    @apply relative h-[88vh] min-h-[520px] max-h-[820px] overflow-hidden bg-earth-900;
+    @apply relative overflow-hidden bg-earth-900;
+    height: 56vw;
+    min-height: 320px;
+    max-height: 680px;
+  }
+
+  @media (min-width: 768px) {
+    .hero-slider {
+      height: 88vh;
+      min-height: 520px;
+      max-height: 820px;
+    }
   }
 
   .hero-slider__slide {

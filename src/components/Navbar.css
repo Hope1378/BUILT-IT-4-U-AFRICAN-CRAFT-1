@@ -3,7 +3,8 @@
   }
 
   .navbar--overlay {
-    @apply absolute top-0 left-0 right-0 z-50 bg-transparent;
+    @apply absolute top-0 left-0 right-0 z-50;
+    background: linear-gradient(to bottom, rgba(30,20,10,0.65) 0%, transparent 100%);
   }
 
   .navbar--solid {
@@ -60,6 +61,7 @@
 
   .navbar__tone--light {
     @apply text-white hover:text-gold-300;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.7);
   }
 
   .navbar__tone--dark {
