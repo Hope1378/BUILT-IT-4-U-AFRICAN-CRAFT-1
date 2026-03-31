@@ -18,8 +18,8 @@ export default function Navbar() {
   const location = useLocation()
   const { totalItems, openCart } = useCart()
   const isHome = location.pathname === '/'
-  // Overlay only on desktop; mobile navbar is always solid
-  const isOverlay = isHome && !scrolled && !menuOpen && !isMobile
+  // On mobile: always sticky (never overlay). On desktop: overlay if home + !scrolled
+  const isOverlay = isHome && !scrolled && !isMobile && !menuOpen
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
