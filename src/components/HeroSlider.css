@@ -1,8 +1,8 @@
   .hero-slider {
     @apply relative overflow-hidden bg-earth-900;
-    height: 48vw;
-    min-height: 220px;
-    max-height: 360px;
+    height: 40vw;
+    min-height: 180px;
+    max-height: 280px;
   }
 
   @media (min-width: 768px) {
