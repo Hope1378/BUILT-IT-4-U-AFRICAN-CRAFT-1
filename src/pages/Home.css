@@ -1,0 +1,151 @@
+  .home__stats {
+    @apply bg-terracotta-500 py-5;
+  }
+
+  .home__stats-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-6 text-center;
+  }
+
+  .home__stat-value {
+    @apply text-2xl font-display font-bold text-white;
+  }
+
+  .home__stat-label {
+    @apply text-terracotta-100 text-sm font-body;
+  }
+
+  .home__category-grid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-5;
+  }
+
+  .home__category-card {
+    @apply relative rounded-2xl overflow-hidden aspect-[3/4] shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .home__category-image {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .home__category-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-earth-900/75 via-earth-900/20 to-transparent;
+  }
+
+  .home__category-copy {
+    @apply absolute bottom-4 left-4 right-4;
+  }
+
+  .home__category-title {
+    @apply text-white font-display font-bold text-xl;
+  }
+
+  .home__category-count {
+    @apply text-earth-200 text-xs mt-0.5;
+  }
+
+  .home__category-arrow {
+    @apply absolute top-3 right-3 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center transition-colors;
+  }
+
+  .home__category-card:hover .home__category-image {
+    transform: scale(1.1);
+  }
+
+  .home__category-card:hover .home__category-arrow {
+    @apply bg-terracotta-500;
+  }
+
+  .home__products-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+
+  .home__cta-row {
+    @apply text-center mt-10;
+  }
+
+  .home__features-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8;
+  }
+
+  .home__feature-card {
+    @apply bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow text-center;
+  }
+
+  .home__feature-icon-wrap {
+    @apply w-12 h-12 rounded-full bg-terracotta-100 flex items-center justify-center mx-auto mb-4;
+  }
+
+  .home__feature-title {
+    @apply font-display font-bold text-earth-800 text-lg mb-2;
+  }
+
+  .home__feature-copy {
+    @apply text-earth-500 text-sm leading-relaxed;
+  }
+
+  .home__story {
+    @apply relative overflow-hidden py-24;
+  }
+
+  .home__story-image {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  .home__story-overlay {
+    @apply absolute inset-0 bg-earth-900/70;
+  }
+
+  .home__story-content {
+    @apply relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center;
+  }
+
+  .home__story-eyebrow {
+    @apply text-gold-400 font-semibold text-sm tracking-widest uppercase;
+  }
+
+  .home__story-title {
+    @apply font-display font-black text-4xl sm:text-5xl text-white mt-3 mb-5 text-shadow;
+  }
+
+  .home__story-copy {
+    @apply text-earth-100 text-base sm:text-lg leading-relaxed mb-8;
+  }
+
+  .home__story-actions {
+    @apply flex flex-wrap gap-4 justify-center;
+  }
+
+  .home__story-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 border-2 border-white/70 text-white hover:bg-white hover:text-earth-800 font-semibold rounded-lg transition-all duration-200;
+  }
+
+  .home__testimonials {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-7;
+  }
+
+  .home__testimonial-card {
+    @apply bg-earth-50 rounded-2xl p-6 border border-earth-100;
+  }
+
+  .home__testimonial-stars {
+    @apply flex mb-4;
+  }
+
+  .home__testimonial-copy {
+    @apply text-earth-700 text-sm leading-relaxed italic mb-5;
+  }
+
+  .home__testimonial-meta {
+    @apply flex items-center gap-3;
+  }
+
+  .home__testimonial-avatar {
+    @apply w-10 h-10 rounded-full object-cover;
+  }
+
+  .home__testimonial-name {
+    @apply font-display font-semibold text-earth-800 text-sm;
+  }
+
+  .home__testimonial-location {
+    @apply text-earth-400 text-xs;
+  }

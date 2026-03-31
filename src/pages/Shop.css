@@ -1,0 +1,91 @@
+  .shop__toolbar {
+    @apply flex flex-col sm:flex-row gap-3 mb-6;
+  }
+
+  .shop__search {
+    @apply relative flex-1;
+  }
+
+  .shop__search-icon {
+    @apply absolute left-3 top-1/2 -translate-y-1/2 text-earth-400;
+  }
+
+  .shop__search-input {
+    @apply w-full pl-9 pr-9 py-2.5 rounded-xl border border-earth-200 bg-white text-sm text-earth-800 placeholder-earth-400 focus:outline-none focus:border-terracotta-400 shadow-sm;
+  }
+
+  .shop__clear-search {
+    @apply absolute right-3 top-1/2 -translate-y-1/2 text-earth-400 hover:text-earth-600;
+  }
+
+  .shop__sort {
+    @apply px-4 py-2.5 rounded-xl border border-earth-200 bg-white text-sm text-earth-700 focus:outline-none focus:border-terracotta-400 shadow-sm cursor-pointer;
+  }
+
+  .shop__filters-toggle {
+    @apply sm:hidden flex items-center gap-2 px-4 py-2.5 rounded-xl border border-earth-200 bg-white text-sm text-earth-700 shadow-sm;
+  }
+
+  .shop__categories {
+    @apply flex-wrap gap-2 mb-8;
+  }
+
+  .shop__categories--open {
+    @apply block sm:flex;
+  }
+
+  .shop__categories--closed {
+    @apply hidden sm:flex;
+  }
+
+  .shop__category {
+    @apply px-5 py-2 rounded-full text-sm font-semibold capitalize transition-all duration-200;
+  }
+
+  .shop__category--active {
+    @apply bg-terracotta-500 text-white shadow-md;
+  }
+
+  .shop__category--inactive {
+    @apply bg-white text-earth-600 border border-earth-200 hover:border-terracotta-400 hover:text-terracotta-500;
+  }
+
+  .shop__results {
+    @apply flex items-center justify-between mb-5;
+  }
+
+  .shop__results-copy {
+    @apply text-earth-500 text-sm;
+  }
+
+  .shop__results-emphasis {
+    @apply font-semibold text-earth-700;
+  }
+
+  .shop__results-category {
+    @apply text-terracotta-600 font-semibold capitalize;
+  }
+
+  .shop__clear-filters {
+    @apply text-xs text-terracotta-500 hover:underline flex items-center gap-1;
+  }
+
+  .shop__grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-12;
+  }
+
+  .shop__empty {
+    @apply flex flex-col items-center justify-center py-24 text-center;
+  }
+
+  .shop__empty-icon {
+    @apply text-5xl mb-4;
+  }
+
+  .shop__empty-title {
+    @apply font-display font-bold text-earth-700 text-xl mb-2;
+  }
+
+  .shop__empty-copy {
+    @apply text-earth-400 text-sm mb-5;
+  }

@@ -1,0 +1,132 @@
+  .contact__grid {
+    @apply grid grid-cols-1 lg:grid-cols-5 gap-10;
+  }
+
+  .contact__info {
+    @apply lg:col-span-2 space-y-5;
+  }
+
+  .contact__info-title {
+    @apply font-display font-bold text-earth-800 text-2xl mb-1;
+  }
+
+  .contact__info-copy {
+    @apply text-earth-500 text-sm leading-relaxed;
+  }
+
+  .contact__card {
+    @apply flex items-start gap-4 bg-white rounded-2xl p-5 shadow-sm border border-earth-100;
+  }
+
+  .contact__card-icon-wrap {
+    @apply w-11 h-11 rounded-xl bg-terracotta-100 flex items-center justify-center shrink-0;
+  }
+
+  .contact__card-icon {
+    @apply text-terracotta-600;
+  }
+
+  .contact__card-title {
+    @apply font-display font-semibold text-earth-700 text-sm mb-0.5;
+  }
+
+  .contact__card-link {
+    @apply text-terracotta-600 hover:text-terracotta-700 font-medium text-sm transition-colors;
+  }
+
+  .contact__card-detail {
+    @apply text-earth-700 font-medium text-sm;
+  }
+
+  .contact__card-sub {
+    @apply text-earth-400 text-xs mt-0.5;
+  }
+
+  .contact__map {
+    @apply rounded-2xl overflow-hidden shadow-sm border border-earth-100 h-52;
+  }
+
+  .contact__map-frame {
+    @apply w-full h-full;
+    border: 0;
+  }
+
+  .contact__map-caption {
+    @apply text-earth-400 text-xs text-center;
+  }
+
+  .contact__form-column {
+    @apply lg:col-span-3;
+  }
+
+  .contact__form-card {
+    @apply bg-white rounded-3xl shadow-sm border border-earth-100 p-7 sm:p-10;
+  }
+
+  .contact__submitted {
+    @apply flex flex-col items-center justify-center py-12 text-center;
+  }
+
+  .contact__submitted-icon {
+    @apply text-green-500 mb-4;
+  }
+
+  .contact__submitted-title {
+    @apply font-display font-bold text-earth-800 text-2xl mb-2;
+  }
+
+  .contact__submitted-copy {
+    @apply text-earth-500 text-sm max-w-xs mx-auto mb-6;
+  }
+
+  .contact__form-title {
+    @apply font-display font-bold text-earth-800 text-2xl mb-6;
+  }
+
+  .contact__form {
+    @apply space-y-5;
+  }
+
+  .contact__form-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-5;
+  }
+
+  .contact__label {
+    @apply block text-earth-700 text-xs font-semibold mb-1.5 uppercase tracking-wide;
+  }
+
+  .contact__field {
+    @apply w-full px-4 py-3 rounded-xl border text-sm text-earth-800 placeholder-earth-400 focus:outline-none focus:ring-2 transition-all;
+  }
+
+  .contact__field--error {
+    @apply border-red-400 focus:ring-red-200;
+  }
+
+  .contact__field--default {
+    @apply border-earth-200 focus:border-terracotta-400 focus:ring-terracotta-100;
+  }
+
+  .contact__textarea {
+    @apply resize-y;
+  }
+
+  .contact__error {
+    @apply text-red-500 text-xs mt-1;
+  }
+
+  .contact__submit {
+    @apply btn-primary w-full justify-center text-base disabled:opacity-70 disabled:cursor-not-allowed;
+  }
+
+  .contact__spinner {
+    @apply animate-spin h-4 w-4;
+  }
+
+  .contact__spinner-track {
+    @apply opacity-25;
+  }
+
+  .contact__spinner-fill {
+    @apply opacity-75;
+  }

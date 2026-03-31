@@ -1,0 +1,115 @@
+  .navbar {
+    @apply transition-all duration-300;
+  }
+
+  .navbar--overlay {
+    @apply absolute top-0 left-0 right-0 z-50 bg-transparent;
+  }
+
+  .navbar--solid {
+    @apply sticky top-0 z-50 bg-earth-900/95 backdrop-blur-sm shadow-lg;
+  }
+
+  .navbar__container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .navbar__row {
+    @apply flex items-center justify-between h-16 md:h-20;
+  }
+
+  .navbar__brand {
+    @apply flex items-center gap-2;
+  }
+
+  .navbar__brand-badge {
+    @apply w-9 h-9 rounded-full bg-terracotta-500 flex items-center justify-center text-white font-display font-bold text-lg transition-colors;
+  }
+
+  .navbar__brand:hover .navbar__brand-badge {
+    @apply bg-gold-500;
+  }
+
+  .navbar__brand-copy {
+    @apply leading-tight;
+  }
+
+  .navbar__brand-title {
+    @apply block font-display font-bold text-xl text-white;
+  }
+
+  .navbar__brand-tagline {
+    @apply block text-[10px] font-body tracking-widest text-gold-400 uppercase -mt-0.5;
+  }
+
+  .navbar__nav {
+    @apply hidden md:flex items-center gap-8;
+  }
+
+  .navbar__link {
+    @apply font-body font-medium text-sm tracking-wide pb-0.5 transition-colors;
+  }
+
+  .navbar__tone--light {
+    @apply text-white hover:text-gold-300;
+  }
+
+  .navbar__tone--dark {
+    @apply text-earth-100 hover:text-gold-300;
+  }
+
+  .navbar__link--active-light {
+    @apply text-gold-300 border-b-2 border-gold-300;
+  }
+
+  .navbar__link--active-dark {
+    @apply text-gold-400 border-b-2 border-gold-400;
+  }
+
+  .navbar__actions {
+    @apply hidden md:flex items-center gap-4;
+  }
+
+  .navbar__icon-button {
+    @apply p-2 rounded-full hover:bg-white/10 transition-colors;
+  }
+
+  .navbar__cta {
+    @apply flex items-center gap-2 px-4 py-2 bg-terracotta-500 hover:bg-terracotta-600 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow hover:shadow-md;
+  }
+
+  .navbar__menu-toggle {
+    @apply md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors;
+  }
+
+  .navbar__mobile {
+    @apply md:hidden overflow-hidden transition-all duration-300 bg-earth-900;
+  }
+
+  .navbar__mobile--open {
+    @apply max-h-72 opacity-100;
+  }
+
+  .navbar__mobile--closed {
+    @apply max-h-0 opacity-0;
+  }
+
+  .navbar__mobile-inner {
+    @apply px-4 pt-2 pb-5 space-y-1 border-t border-white/10;
+  }
+
+  .navbar__mobile-link {
+    @apply block px-3 py-2.5 rounded-lg font-body font-medium text-sm transition-colors;
+  }
+
+  .navbar__mobile-link--active {
+    @apply bg-terracotta-500/20 text-gold-300;
+  }
+
+  .navbar__mobile-link--inactive {
+    @apply text-earth-100 hover:bg-white/10;
+  }
+
+  .navbar__mobile-cta {
+    @apply flex items-center justify-center gap-2 mt-3 w-full px-4 py-2.5 bg-terracotta-500 hover:bg-terracotta-600 text-white text-sm font-semibold rounded-lg transition-colors;
+  }
