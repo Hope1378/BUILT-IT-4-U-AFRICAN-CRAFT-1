@@ -2,7 +2,6 @@
     @apply transition-all duration-300;
   }
 
-  html.no-scroll,
   body.no-scroll {
     overflow: hidden !important;
     position: fixed;
@@ -20,7 +19,7 @@
   }
 
   .navbar--menu-open {
-    @apply sticky top-0 z-50 bg-earth-900 shadow-lg;
+    @apply fixed top-0 left-0 right-0 z-[90] bg-earth-900 shadow-lg;
   }
 
   .navbar__container {

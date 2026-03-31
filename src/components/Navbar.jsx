@@ -42,12 +42,10 @@ export default function Navbar() {
     }
 
     const scrollY = window.scrollY
-    document.documentElement.classList.add('no-scroll')
     document.body.classList.add('no-scroll')
     document.body.style.top = `-${scrollY}px`
 
     return () => {
-      document.documentElement.classList.remove('no-scroll')
       document.body.classList.remove('no-scroll')
       document.body.style.top = ''
       window.scrollTo(0, scrollY)
