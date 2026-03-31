@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard'
 import { products } from '../data/products'
 import './Shop.css'
 
-const CATEGORIES = ['all', 'baskets', 'masks', 'jewelry', 'instruments']
+const CATEGORIES = ['all', 'baskets', 'masks', 'jewelry', 'clothing', 'instruments']
 
 const SORT_OPTIONS = [
   { value: 'default',      label: 'Featured' },
@@ -76,7 +76,7 @@ export default function Shop() {
             African Craft Shop
           </h1>
           <p className="page-hero__copy">
-            {products.length} authentic pieces from across Africa — baskets, masks, jewelry &amp; instruments.
+            {products.length} authentic pieces from across Africa — baskets, masks, jewelry, cultural attire, and instruments.
           </p>
         </div>
       </div>

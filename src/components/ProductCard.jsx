@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Star, ShoppingCart, Heart, MapPin } from 'lucide-react'
+import { useCart } from '../context/CartContext'
 import './ProductCard.css'
 
 const badgeColors = {
@@ -15,12 +16,15 @@ const badgeColors = {
 export default function ProductCard({ product }) {
   const [wished, setWished] = useState(false)
   const [added, setAdded] = useState(false)
+  const { addItem, openCart } = useCart()
 
   const discount = product.originalPrice
     ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
     : null
 
   const handleAddToCart = () => {
+    addItem(product)
+    openCart()
     setAdded(true)
     setTimeout(() => setAdded(false), 1800)
   }

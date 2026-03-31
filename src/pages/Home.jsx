@@ -6,7 +6,7 @@ import { products, features, testimonials } from '../data/products'
 import './Home.css'
 
 const featuredProducts = products.filter((p) =>
-  ['Rwandan Peace Basket', 'Dogon Spirit Mask', 'Maasai Beaded Necklace', 'Djembe Drum'].includes(p.name),
+  ['Rwandan Peace Basket', 'Dogon Spirit Mask', 'Kente Royal Wrap', 'Djembe Drum'].includes(p.name),
 )
 
 const iconMap = { Shield, Globe, Heart, Award }
@@ -21,19 +21,25 @@ const categoryCards = [
   {
     label: 'Masks',
     value: 'masks',
-    image: 'https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=600&q=80',
     count: 3,
   },
   {
     label: 'Jewelry',
     value: 'jewelry',
-    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80',
+    count: 3,
+  },
+  {
+    label: 'Clothing',
+    value: 'clothing',
+    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80',
     count: 3,
   },
   {
     label: 'Instruments',
     value: 'instruments',
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=600&q=80',
     count: 3,
   },
 ]
@@ -72,7 +78,7 @@ export default function Home() {
             </span>
             <h2 className="section-title mt-2">Explore African Crafts</h2>
             <p className="section-subtitle text-center">
-              Discover four rich categories of authentic handwork from across the African continent.
+              Discover baskets, masks, jewelry, cultural attire, and instruments from across Africa.
             </p>
           </div>
           <div className="home__category-grid">
@@ -160,8 +166,8 @@ export default function Home() {
       {/* ── Story / CTA Banner ── */}
       <section className="home__story">
         <img
-          src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1400&q=80"
-          alt="African artisan at work"
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80"
+          alt="African cultural fashion and artisan style"
           className="home__story-image"
         />
         <div className="home__story-overlay" />

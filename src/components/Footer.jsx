@@ -25,6 +25,7 @@ const quickLinks = [
   { to: '/shop?category=baskets', label: 'Baskets' },
   { to: '/shop?category=masks', label: 'Masks' },
   { to: '/shop?category=jewelry', label: 'Jewelry' },
+  { to: '/shop?category=clothing', label: 'Clothing' },
   { to: '/shop?category=instruments', label: 'Instruments' },
 ]
 

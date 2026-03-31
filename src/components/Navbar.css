@@ -70,8 +70,24 @@
     @apply hidden md:flex items-center gap-4;
   }
 
+  .navbar__mobile-actions {
+    @apply flex items-center gap-2 md:hidden;
+  }
+
   .navbar__icon-button {
     @apply p-2 rounded-full hover:bg-white/10 transition-colors;
+  }
+
+  .navbar__cart-button {
+    @apply relative p-2 rounded-full hover:bg-white/10 transition-colors;
+  }
+
+  .navbar__cart-button--mobile {
+    @apply inline-flex;
+  }
+
+  .navbar__cart-count {
+    @apply absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-terracotta-500 text-white text-[10px] font-semibold flex items-center justify-center;
   }
 
   .navbar__cta {
@@ -112,4 +128,8 @@
 
   .navbar__mobile-cta {
     @apply flex items-center justify-center gap-2 mt-3 w-full px-4 py-2.5 bg-terracotta-500 hover:bg-terracotta-600 text-white text-sm font-semibold rounded-lg transition-colors;
+  }
+
+  .navbar__mobile-cart {
+    @apply flex items-center justify-center gap-2 mt-2 w-full px-4 py-2.5 border border-earth-600 text-earth-100 hover:bg-white/10 text-sm font-semibold rounded-lg transition-colors;
   }

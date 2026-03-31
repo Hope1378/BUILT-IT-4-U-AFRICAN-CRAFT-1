@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Menu, X, ShoppingBag, Search } from 'lucide-react'
+import { Menu, X, ShoppingBag, Search, ShoppingCart } from 'lucide-react'
+import { useCart } from '../context/CartContext'
 import './Navbar.css'
 
 const navLinks = [
@@ -13,6 +14,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
+  const { totalItems, openCart } = useCart()
   const isHome = location.pathname === '/'
   const isOverlay = isHome && !scrolled
 
@@ -79,6 +81,15 @@ export default function Navbar() {
             >
               <Search size={18} />
             </button>
+            <button
+              type="button"
+              aria-label="Open cart"
+              className={`navbar__cart-button ${toneClass}`}
+              onClick={openCart}
+            >
+              <ShoppingCart size={18} />
+              {totalItems > 0 && <span className="navbar__cart-count">{totalItems}</span>}
+            </button>
             <Link
               to="/shop"
               className="navbar__cta"
@@ -89,13 +100,24 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Hamburger */}
-          <button
-            className={`navbar__menu-toggle ${toneClass}`}
-            onClick={() => setMenuOpen((v) => !v)}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          <div className="navbar__mobile-actions">
+            <button
+              type="button"
+              aria-label="Open cart"
+              className={`navbar__cart-button navbar__cart-button--mobile ${toneClass}`}
+              onClick={openCart}
+            >
+              <ShoppingCart size={18} />
+              {totalItems > 0 && <span className="navbar__cart-count">{totalItems}</span>}
+            </button>
+            <button
+              className={`navbar__menu-toggle ${toneClass}`}
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -127,6 +149,10 @@ export default function Navbar() {
             <ShoppingBag size={16} />
             Shop Now
           </Link>
+          <button type="button" className="navbar__mobile-cart" onClick={openCart}>
+            <ShoppingCart size={16} />
+            View Cart {totalItems > 0 ? `(${totalItems})` : ''}
+          </button>
         </div>
       </div>
     </header>
