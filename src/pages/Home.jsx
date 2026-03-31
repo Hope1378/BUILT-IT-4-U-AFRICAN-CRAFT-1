@@ -6,7 +6,7 @@ import { products, features, testimonials } from '../data/products'
 import './Home.css'
 
 const featuredProducts = products.filter((p) =>
-  ['Traditional Gomesi Dress - Royal Blue', 'Traditional Kanzu - Cream Heritage', 'Kids Rainbow Beaded Bracelet Set', 'Women\'s Beaded Jewelry Set'].includes(p.name),
+  ['Bitengi - Traditional Gomesi Blue', 'Traditional Kanzu - Cream Heritage', "Women's Beaded Jewelry Set", 'Traditional Woven Baskets - Kids'].includes(p.name),
 )
 
 const iconMap = { Shield, Globe, Heart, Award }

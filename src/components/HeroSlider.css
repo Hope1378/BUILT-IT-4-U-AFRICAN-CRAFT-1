@@ -14,8 +14,15 @@
     @apply opacity-0 z-0;
   }
 
+  .hero-slider__bg-blur {
+    @apply absolute inset-0 bg-cover bg-center;
+    filter: blur(18px);
+    transform: scale(1.12);
+    opacity: 0.55;
+  }
+
   .hero-slider__image {
-    @apply w-full h-full object-cover object-center;
+    @apply w-full h-full object-contain object-center relative z-10;
   }
 
   .hero-slider__overlay--side {

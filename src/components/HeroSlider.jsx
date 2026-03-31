@@ -41,6 +41,11 @@ export default function HeroSlider() {
             i === current ? 'hero-slider__slide--active' : 'hero-slider__slide--inactive'
           }`}
         >
+          {/* Blurred background fill – prevents letterbox bars */}
+          <div
+            className="hero-slider__bg-blur"
+            style={{ backgroundImage: `url(${s.image})` }}
+          />
           <img
             src={s.image}
             alt={s.title}
