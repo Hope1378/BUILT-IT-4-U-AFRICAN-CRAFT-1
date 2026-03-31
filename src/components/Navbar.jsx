@@ -14,15 +14,22 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
   const location = useLocation()
   const { totalItems, openCart } = useCart()
   const isHome = location.pathname === '/'
-  const isOverlay = isHome && !scrolled && !menuOpen
+  // Overlay only on desktop; mobile navbar is always solid
+  const isOverlay = isHome && !scrolled && !menuOpen && !isMobile
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
+    const onResize = () => setIsMobile(window.innerWidth < 768)
     window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
+    window.addEventListener('resize', onResize)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onResize)
+    }
   }, [])
 
   // Close mobile menu on route change
