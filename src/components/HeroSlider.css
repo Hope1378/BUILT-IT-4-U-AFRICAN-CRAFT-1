@@ -7,9 +7,9 @@
 
   @media (max-width: 767px) {
     .hero-slider {
-      height: 280px !important;
-      min-height: 280px !important;
-      max-height: 280px !important;
+      height: 380px !important;
+      min-height: 380px !important;
+      max-height: 380px !important;
     }
   }
 

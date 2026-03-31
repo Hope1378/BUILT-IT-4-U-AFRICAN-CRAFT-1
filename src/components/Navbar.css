@@ -116,7 +116,15 @@
   }
 
   .navbar__mobile {
-    @apply md:hidden bg-earth-900 border-t border-white/10 overflow-hidden transition-all duration-300;
+    @apply md:hidden bg-earth-900 overflow-hidden transition-all duration-300;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 220px;
+    border-radius: 0 0 0 14px;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: -4px 6px 20px rgba(0,0,0,0.45);
   }
 
   .navbar__mobile--open {
@@ -128,7 +136,7 @@
   }
 
   .navbar__mobile-inner {
-    @apply px-4 pt-3 pb-5 space-y-1;
+    @apply px-3 pt-3 pb-4 space-y-1;
   }
 
   .navbar__mobile-link {
