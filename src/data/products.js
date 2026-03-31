@@ -5,7 +5,7 @@ export const heroSlides = [
     subtitle: 'Celebrate Ugandan cultural wear with traditional gomesi, beaded jewelry, and artisan textiles.',
     cta: 'Shop Women',
     ctaLink: '/shop?category=women',
-    image: '/images/uganda/ug11 women bitengi.jpg',
+    image: '/images/uganda/ug2 bitengyi.jpg',
     accent: 'Women Empowerment',
   },
   {
@@ -14,7 +14,7 @@ export const heroSlides = [
     subtitle: 'Explore traditional kanzu and authentic Ugandan ceremonial wear for men.',
     cta: 'Shop Men',
     ctaLink: '/shop?category=men',
-    image: '/images/uganda/ug13men.jpg',
+    image: '/images/uganda/ug8 crafts.jpg',
     accent: 'Traditional Men',
   },
   {
@@ -32,7 +32,7 @@ export const heroSlides = [
     subtitle: 'Hand-rolled paper beads and traditional jewelry from Ugandan women workshops.',
     cta: 'Discover Jewelry',
     ctaLink: '/shop?category=women',
-    image: '/images/uganda/ug10 women jewelry.webp',
+    image: '/images/uganda/ug1.webp',
     accent: 'Handmade Beads',
   },
   {
@@ -41,7 +41,7 @@ export const heroSlides = [
     subtitle: 'Authentic Ugandan baskets, decorative pieces, and handcrafted treasures.',
     cta: 'View Crafts',
     ctaLink: '/shop?category=children',
-    image: '/images/uganda/ug5 craft.jpg',
+    image: '/images/uganda/ug3 basckets.webp',
     accent: 'Artisan Craft',
   },
 ]
