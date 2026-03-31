@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ShoppingBag, Search, ShoppingCart } from 'lucide-react'
 import { useCart } from '../context/CartContext'
+import { lockBodyScroll, unlockBodyScroll } from '../utils/scrollLock'
 import './Navbar.css'
 
 const navLinks = [
@@ -29,6 +30,18 @@ export default function Navbar() {
     setMenuOpen(false)
   }, [location])
 
+  useEffect(() => {
+    if (!menuOpen) {
+      return undefined
+    }
+
+    lockBodyScroll()
+
+    return () => {
+      unlockBodyScroll()
+    }
+  }, [menuOpen])
+
   const toneClass = isOverlay ? 'navbar__tone--light' : 'navbar__tone--dark'
 
   const activeClass = isOverlay
@@ -42,17 +55,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="navbar__brand">
-            <span className="navbar__brand-badge">
-              A
-            </span>
-            <div className="navbar__brand-copy">
-              <span className="navbar__brand-title">
-                AfriCraft
-              </span>
-              <span className="navbar__brand-tagline">
-                Authentic Artistry
-              </span>
-            </div>
+            <img src="/branding/kajabo-crafty-logo.svg" alt="Kajabo Crafty" className="navbar__logo" />
           </Link>
 
           {/* Desktop Nav */}

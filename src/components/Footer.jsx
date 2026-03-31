@@ -23,7 +23,7 @@ const quickLinks = [
   { to: '/', label: 'Home' },
   { to: '/shop', label: 'Shop All' },
   { to: '/shop?category=baskets', label: 'Baskets' },
-  { to: '/shop?category=masks', label: 'Masks' },
+  { to: '/shop?category=barkcloth', label: 'Barkcloth' },
   { to: '/shop?category=jewelry', label: 'Jewelry' },
   { to: '/shop?category=clothing', label: 'Clothing' },
   { to: '/shop?category=instruments', label: 'Instruments' },
@@ -33,8 +33,8 @@ const infoLinks = [
   { to: '/contact', label: 'Contact Us' },
   { href: '#', label: 'Shipping Policy' },
   { href: '#', label: 'Returns & Refunds' },
-  { href: '#', label: 'Artisan Stories' },
-  { href: '#', label: 'About AfriCraft' },
+  { href: '#', label: 'Maker Stories' },
+  { href: '#', label: 'About Kajabo Crafty' },
 ]
 
 export default function Footer() {
@@ -71,19 +71,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="footer__brand-row">
-            <span className="footer__brand-badge">
-              A
-            </span>
-            <div className="footer__brand-copy">
-              <span className="footer__brand-title">AfriCraft</span>
-              <span className="footer__brand-tagline">
-                Authentic Artistry
-              </span>
-            </div>
+            <img src="/branding/kajabo-crafty-logo.svg" alt="Kajabo Crafty" className="footer__logo" />
           </div>
           <p className="footer__brand-text">
-            Connecting the world with authentic African artisans since 2018. Every purchase supports
-            a family and preserves a tradition.
+            Kajabo Crafty presents Ugandan cultural wear and heritage craft with warmth, pride, and artisan-first sourcing.
           </p>
           {/* Social */}
           <div className="footer__socials">
@@ -146,17 +137,17 @@ export default function Footer() {
           </ul>
           {/* Contact */}
           <div className="footer__contact">
-            <a href="mailto:hello@africraft.com" className="footer__contact-link">
+            <a href="mailto:hello@kajabocrafty.com" className="footer__contact-link">
               <Mail size={14} className="footer__contact-icon" />
-              hello@africraft.com
+              hello@kajabocrafty.com
             </a>
-            <a href="tel:+1234567890" className="footer__contact-link">
+            <a href="tel:+256700123456" className="footer__contact-link">
               <Phone size={14} className="footer__contact-icon" />
-              +1 (234) 567-890
+              +256 700 123 456
             </a>
             <span className="footer__contact-text">
               <MapPin size={14} className="footer__contact-icon footer__contact-pin" />
-              14 Craft Lane, Nairobi, Kenya
+              Plot 14 Buganda Road, Kampala, Uganda
             </span>
           </div>
         </div>
@@ -195,7 +186,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
-          <span>© {new Date().getFullYear()} AfriCraft. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Kajabo Crafty. All rights reserved.</span>
           <div className="footer__bottom-links">
             <a href="#" className="footer__bottom-link">Privacy Policy</a>
             <a href="#" className="footer__bottom-link">Terms of Service</a>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#FFF9F2"/>
+  <circle cx="165" cy="165" r="118" fill="#F6C5AD" fill-opacity="0.45"/>
+  <circle cx="630" cy="630" r="125" fill="#F5E58E" fill-opacity="0.42"/>
+  <path d="M225 295C286 241 343 214 400 214C457 214 514 241 575 295" stroke="#724F28" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="250" cy="317" r="28" fill="#C0522A"/>
+  <circle cx="306" cy="358" r="26" fill="#E8BA22"/>
+  <circle cx="368" cy="392" r="28" fill="#2F1F0F"/>
+  <circle cx="432" cy="392" r="28" fill="#C0522A"/>
+  <circle cx="494" cy="358" r="26" fill="#E8BA22"/>
+  <circle cx="550" cy="317" r="28" fill="#2F1F0F"/>
+  <path d="M258 458C310 420 357 401 400 401C443 401 490 420 542 458" stroke="#724F28" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="278" cy="474" r="22" fill="#8A5E11"/>
+  <circle cx="332" cy="505" r="20" fill="#C0522A"/>
+  <circle cx="400" cy="520" r="24" fill="#E8BA22"/>
+  <circle cx="468" cy="505" r="20" fill="#C0522A"/>
+  <circle cx="522" cy="474" r="22" fill="#8A5E11"/>
+  <path d="M315 250C338 282 367 299 400 299C433 299 462 282 485 250" stroke="#2F1F0F" stroke-width="8" stroke-linecap="round"/>
+  <text x="400" y="708" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-weight="700" fill="#5B3D1F">Paper Bead Craft</text>
+</svg>

@@ -1,6 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import CartDrawer from './components/CartDrawer'
+import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
@@ -13,6 +14,7 @@ export default function App() {
     <BrowserRouter>
       <CartProvider>
         <div className="app-shell">
+          <ScrollToTop />
           <Navbar />
           <CartDrawer />
           <main className="app-main">
@@ -20,6 +22,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
           <Footer />

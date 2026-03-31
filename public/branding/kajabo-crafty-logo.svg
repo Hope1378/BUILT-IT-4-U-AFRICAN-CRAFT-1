@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" fill="none">
+  <defs>
+    <linearGradient id="kajaboGlow" x1="32" y1="18" x2="120" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8BA22"/>
+      <stop offset="1" stop-color="#C0522A"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="140" rx="28" fill="#F7F3EE"/>
+  <g transform="translate(24 18)">
+    <rect x="0" y="0" width="92" height="92" rx="28" fill="#2F1F0F"/>
+    <circle cx="46" cy="46" r="31" fill="url(#kajaboGlow)"/>
+    <path d="M46 19C54 19 61 22 66 27C71 32 74 39 74 46C74 53 71 60 66 65C61 70 54 73 46 73C38 73 31 70 26 65C21 60 18 53 18 46C18 39 21 32 26 27C31 22 38 19 46 19Z" stroke="#FDF3EF" stroke-width="3"/>
+    <path d="M26 38C32 43 39 46 46 46C53 46 60 43 66 38" stroke="#4F1E10" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M26 54C32 49 39 46 46 46C53 46 60 49 66 54" stroke="#4F1E10" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M35 25L57 67" stroke="#FDF3EF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M57 25L35 67" stroke="#FDF3EF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(136 33)">
+    <text x="0" y="34" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#2F1F0F">Kajabo Crafty</text>
+    <text x="2" y="63" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#8A5E11">UGANDAN CRAFT AND CULTURE</text>
+    <path d="M0 82H320" stroke="#D9C7A9" stroke-width="2"/>
+    <text x="0" y="108" font-family="Inter, Arial, sans-serif" font-size="15" fill="#724F28">Handmade wear, woven craft, barkcloth, beadwork, and rhythm from Uganda.</text>
+  </g>
+</svg>

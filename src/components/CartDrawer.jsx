@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react'
 import { useCart } from '../context/CartContext'
+import { lockBodyScroll, unlockBodyScroll } from '../utils/scrollLock'
 import './CartDrawer.css'
 
 export default function CartDrawer() {
@@ -14,6 +16,18 @@ export default function CartDrawer() {
     updateQuantity,
     totalItems,
   } = useCart()
+
+  useEffect(() => {
+    if (!isCartOpen) {
+      return undefined
+    }
+
+    lockBodyScroll()
+
+    return () => {
+      unlockBodyScroll()
+    }
+  }, [isCartOpen])
 
   return (
     <aside className={`cart-drawer ${isCartOpen ? 'cart-drawer--open' : ''}`} aria-hidden={!isCartOpen}>
@@ -36,7 +50,7 @@ export default function CartDrawer() {
                 <ShoppingBag size={28} />
               </div>
               <h3 className="cart-drawer__empty-title">Your cart is empty</h3>
-              <p className="cart-drawer__empty-copy">Start with a handpicked African craft or a cultural clothing piece from the shop.</p>
+              <p className="cart-drawer__empty-copy">Start with a Kajabo Crafty basket, barkcloth decor piece, or Ugandan cultural wear selection.</p>
               <Link to="/shop" className="cart-drawer__shop-link" onClick={closeCart}>
                 Explore the Shop
               </Link>

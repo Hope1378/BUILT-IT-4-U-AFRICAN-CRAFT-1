@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#FBF6EE"/>
+  <circle cx="150" cy="155" r="110" fill="#F6C5AD" fill-opacity="0.42"/>
+  <circle cx="640" cy="625" r="125" fill="#F5E58E" fill-opacity="0.44"/>
+  <rect x="175" y="140" width="450" height="520" rx="26" fill="#A8804D"/>
+  <rect x="205" y="172" width="390" height="456" rx="18" fill="#8B6435"/>
+  <path d="M238 220H562" stroke="#D9C7A9" stroke-width="8" stroke-dasharray="18 16"/>
+  <path d="M238 308H562" stroke="#D9C7A9" stroke-width="8" stroke-dasharray="18 16"/>
+  <path d="M238 396H562" stroke="#D9C7A9" stroke-width="8" stroke-dasharray="18 16"/>
+  <path d="M238 484H562" stroke="#D9C7A9" stroke-width="8" stroke-dasharray="18 16"/>
+  <path d="M238 572H562" stroke="#D9C7A9" stroke-width="8" stroke-dasharray="18 16"/>
+  <path d="M283 196V604" stroke="#C2A476" stroke-width="10"/>
+  <path d="M400 196V604" stroke="#C2A476" stroke-width="10"/>
+  <path d="M517 196V604" stroke="#C2A476" stroke-width="10"/>
+  <path d="M205 172L175 140" stroke="#724F28" stroke-width="10"/>
+  <path d="M595 172L625 140" stroke="#724F28" stroke-width="10"/>
+  <text x="400" y="728" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-weight="700" fill="#5B3D1F">Buganda Barkcloth Art</text>
+</svg>

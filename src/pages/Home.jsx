@@ -6,7 +6,7 @@ import { products, features, testimonials } from '../data/products'
 import './Home.css'
 
 const featuredProducts = products.filter((p) =>
-  ['Rwandan Peace Basket', 'Dogon Spirit Mask', 'Kente Royal Wrap', 'Djembe Drum'].includes(p.name),
+  ['Buganda Coil Basket', 'Buganda Barkcloth Panel', 'Gomesi Celebration Dress', 'Royal Drum Centerpiece'].includes(p.name),
 )
 
 const iconMap = { Shield, Globe, Heart, Award }
@@ -15,31 +15,31 @@ const categoryCards = [
   {
     label: 'Baskets',
     value: 'baskets',
-    image: 'https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=600&q=80',
+    image: '/images/uganda/baskets.svg',
     count: 3,
   },
   {
-    label: 'Masks',
-    value: 'masks',
-    image: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=600&q=80',
+    label: 'Barkcloth',
+    value: 'barkcloth',
+    image: '/images/uganda/barkcloth.svg',
     count: 3,
   },
   {
     label: 'Jewelry',
     value: 'jewelry',
-    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=600&q=80',
+    image: '/images/uganda/beads.svg',
     count: 3,
   },
   {
     label: 'Clothing',
     value: 'clothing',
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80',
+    image: '/images/uganda/gomesi.svg',
     count: 3,
   },
   {
     label: 'Instruments',
     value: 'instruments',
-    image: 'https://images.unsplash.com/photo-1514119412350-e174d90d280e?auto=format&fit=crop&w=600&q=80',
+    image: '/images/uganda/drums.svg',
     count: 3,
   },
 ]
@@ -76,9 +76,9 @@ export default function Home() {
             <span className="page-section__eyebrow">
               Browse By Category
             </span>
-            <h2 className="section-title mt-2">Explore African Crafts</h2>
+            <h2 className="section-title mt-2">Explore Uganda Through Craft</h2>
             <p className="section-subtitle text-center">
-              Discover baskets, masks, jewelry, cultural attire, and instruments from across Africa.
+              Kajabo Crafty brings together Ugandan basketry, barkcloth, beadwork, cultural wear, and royal rhythm pieces.
             </p>
           </div>
           <div className="home__category-grid">
@@ -115,9 +115,9 @@ export default function Home() {
             <span className="page-section__eyebrow">
               Hand-Picked
             </span>
-            <h2 className="section-title mt-2">Featured Pieces</h2>
+            <h2 className="section-title mt-2">Featured Ugandan Pieces</h2>
             <p className="section-subtitle text-center">
-              Our curators' top picks from this season — authentic, exceptional, and ethically sourced.
+              Our most-loved Kajabo Crafty selections, chosen for cultural identity, beauty, and strong artisan finishing.
             </p>
           </div>
           <div className="home__products-grid">
@@ -141,7 +141,7 @@ export default function Home() {
             <span className="page-section__eyebrow">
               Our Promise
             </span>
-            <h2 className="section-title mt-2">Why AfriCraft?</h2>
+            <h2 className="section-title mt-2">Why Kajabo Crafty?</h2>
           </div>
           <div className="home__features-grid">
             {features.map(({ icon, title, desc }) => {
@@ -166,8 +166,8 @@ export default function Home() {
       {/* ── Story / CTA Banner ── */}
       <section className="home__story">
         <img
-          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=80"
-          alt="African cultural fashion and artisan style"
+          src="/images/uganda/market-story.svg"
+          alt="Ugandan market craft and cultural wear illustration"
           className="home__story-image"
         />
         <div className="home__story-overlay" />
@@ -176,12 +176,12 @@ export default function Home() {
             Our Story
           </span>
           <h2 className="home__story-title">
-            Every Piece Has a Soul
+            Uganda, Crafted with Pride
           </h2>
           <p className="home__story-copy">
-            We travel deep into African communities to bring you art that carries centuries of
-            knowledge. When you buy from AfriCraft, you're not just buying a product — you're
-            sustaining a tradition, supporting a family, and owning a piece of history.
+            Kajabo Crafty is built around Ugandan material culture: barkcloth, beadwork, basketry,
+            ceremonial wear, and rhythm. Every order supports makers preserving design languages
+            that belong to families, kingdoms, and living communities across Uganda.
           </p>
           <div className="home__story-actions">
             <Link to="/shop" className="btn-primary">

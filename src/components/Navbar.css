@@ -22,6 +22,10 @@
     @apply flex items-center gap-2;
   }
 
+  .navbar__logo {
+    @apply h-11 md:h-12 w-auto rounded-xl shadow-sm;
+  }
+
   .navbar__brand-badge {
     @apply w-9 h-9 rounded-full bg-terracotta-500 flex items-center justify-center text-white font-display font-bold text-lg transition-colors;
   }

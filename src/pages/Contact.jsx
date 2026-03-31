@@ -6,22 +6,22 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email Us',
-    detail: 'hello@africraft.com',
+    detail: 'hello@kajabocrafty.com',
     sub: 'We reply within 24 hours',
-    href: 'mailto:hello@africraft.com',
+    href: 'mailto:hello@kajabocrafty.com',
   },
   {
     icon: Phone,
     title: 'Call Us',
-    detail: '+1 (234) 567-890',
+    detail: '+256 700 123 456',
     sub: 'Mon–Fri, 9am – 6pm EAT',
-    href: 'tel:+1234567890',
+    href: 'tel:+256700123456',
   },
   {
     icon: MapPin,
     title: 'Visit Us',
-    detail: '14 Craft Lane, Nairobi',
-    sub: 'Kenya, East Africa',
+    detail: 'Plot 14 Buganda Road, Kampala',
+    sub: 'Uganda, East Africa',
     href: 'https://maps.google.com',
   },
   {
@@ -93,7 +93,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="page-hero__copy">
-            Questions about an order, an artisan, or a custom piece? We'd love to hear from you.
+            Questions about Ugandan cultural wear, barkcloth decor, or custom Kajabo Crafty sourcing? We'd love to hear from you.
           </p>
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function Contact() {
                 We're Here for You
               </h2>
               <p className="contact__info-copy">
-                Reach out via any channel below or use the form. Our team of craft specialists
+                Reach out via any channel below or use the form. Our team of Ugandan craft specialists
                 is always happy to help.
               </p>
             </div>
@@ -136,14 +136,14 @@ export default function Contact() {
             {/* Map embed */}
             <div className="contact__map">
               <iframe
-                title="AfriCraft Location"
+                title="Kajabo Crafty Location"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=36.7,-1.35,36.9,-1.15&layer=mapnik"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=32.54,0.28,32.66,0.38&layer=mapnik"
                 className="contact__map-frame"
               />
             </div>
-            <p className="contact__map-caption">📍 14 Craft Lane, Nairobi, Kenya</p>
+            <p className="contact__map-caption">📍 Plot 14 Buganda Road, Kampala, Uganda</p>
           </div>
 
           {/* ── Contact Form ── */}
@@ -183,7 +183,7 @@ export default function Contact() {
                           name="name"
                           value={form.name}
                           onChange={handleChange}
-                          placeholder="e.g. Amara Okafor"
+                          placeholder="e.g. Nakaayi Sarah"
                           autoComplete="name"
                           className={fieldClass('name')}
                         />
@@ -218,7 +218,7 @@ export default function Contact() {
                         name="subject"
                         value={form.subject}
                         onChange={handleChange}
-                        placeholder="Order inquiry, custom piece, wholesale…"
+                        placeholder="Cultural wear order, custom sourcing, wholesale…"
                         className={fieldClass('subject')}
                       />
                       {errors.subject && <p className="contact__error">{errors.subject}</p>}
