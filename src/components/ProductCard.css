@@ -6,8 +6,20 @@
     @apply relative overflow-hidden aspect-square bg-earth-50;
   }
 
+  .product-card__image-button {
+    @apply w-full h-full relative cursor-zoom-in;
+  }
+
   .product-card__image {
     @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .product-card__image-overlay {
+    @apply absolute inset-0 bg-black/0 hover:bg-black/40 flex items-center justify-center gap-2 text-white transition-all duration-300 opacity-0 hover:opacity-100;
+  }
+
+  .product-card__image-text {
+    @apply text-sm font-medium;
   }
 
   .product-card:hover .product-card__image {

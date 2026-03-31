@@ -13,20 +13,19 @@ import {
 import './Footer.css'
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
+  { icon: Facebook, href: 'https://facebook.com/kajabocrafty', label: 'Facebook', external: true },
+  { icon: Instagram, href: 'https://instagram.com/kajabocrafty', label: 'Instagram', external: true },
+  { icon: Twitter, href: 'https://twitter.com/kajabocrafty', label: 'Twitter', external: true },
+  { icon: Youtube, href: 'https://youtube.com/@kajabocrafty', label: 'YouTube', external: true },
 ]
 
 const quickLinks = [
   { to: '/', label: 'Home' },
   { to: '/shop', label: 'Shop All' },
-  { to: '/shop?category=baskets', label: 'Baskets' },
-  { to: '/shop?category=barkcloth', label: 'Barkcloth' },
-  { to: '/shop?category=jewelry', label: 'Jewelry' },
-  { to: '/shop?category=clothing', label: 'Clothing' },
-  { to: '/shop?category=instruments', label: 'Instruments' },
+  { to: '/shop?category=women', label: 'Women' },
+  { to: '/shop?category=men', label: 'Men' },
+  { to: '/shop?category=children', label: 'Children' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 const infoLinks = [

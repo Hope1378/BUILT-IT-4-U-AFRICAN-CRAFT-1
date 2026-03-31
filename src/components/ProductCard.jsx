@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Star, ShoppingCart, Heart, MapPin } from 'lucide-react'
+import { Star, ShoppingCart, Heart, MapPin, ZoomIn } from 'lucide-react'
 import { useCart } from '../context/CartContext'
+import ImageModal from './ImageModal'
 import './ProductCard.css'
 
 const badgeColors = {
@@ -11,11 +12,14 @@ const badgeColors = {
   Popular:    'bg-emerald-600 text-white',
   Premium:    'bg-gold-600 text-white',
   Handcrafted:'bg-earth-500 text-white',
+  Educational: 'bg-blue-600 text-white',
+  New:        'bg-emerald-500 text-white',
 }
 
 export default function ProductCard({ product }) {
   const [wished, setWished] = useState(false)
   const [added, setAdded] = useState(false)
+  const [imageModalOpen, setImageModalOpen] = useState(false)
   const { addItem, openCart } = useCart()
 
   const discount = product.originalPrice
@@ -30,50 +34,61 @@ export default function ProductCard({ product }) {
   }
 
   return (
-    <div className="product-card">
-      {/* Image container */}
-      <div className="product-card__media">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="product-card__image"
-          loading="lazy"
-        />
+    <>
+      <div className="product-card">
+        {/* Image container */}
+        <div className="product-card__media">
+          <button
+            onClick={() => setImageModalOpen(true)}
+            className="product-card__image-button"
+            aria-label="View larger image"
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-card__image"
+              loading="lazy"
+            />
+            <div className="product-card__image-overlay">
+              <ZoomIn size={20} />
+              <span className="product-card__image-text">View</span>
+            </div>
+          </button>
 
-        {/* Badges */}
-        <div className="product-card__badges">
-          {product.badge && (
-            <span className={`product-card__badge ${badgeColors[product.badge] || 'product-card__badge--fallback'}`}>
-              {product.badge}
-            </span>
-          )}
-          {discount && (
-            <span className="product-card__badge product-card__badge--discount">
-              -{discount}%
-            </span>
-          )}
-          {!product.inStock && (
-            <span className="product-card__badge product-card__badge--soldout">
-              Sold Out
-            </span>
-          )}
+          {/* Badges */}
+          <div className="product-card__badges">
+            {product.badge && (
+              <span className={`product-card__badge ${badgeColors[product.badge] || 'product-card__badge--fallback'}`}>
+                {product.badge}
+              </span>
+            )}
+            {discount && (
+              <span className="product-card__badge product-card__badge--discount">
+                -{discount}%
+              </span>
+            )}
+            {!product.inStock && (
+              <span className="product-card__badge product-card__badge--soldout">
+                Sold Out
+              </span>
+            )}
+          </div>
+
+          {/* Wishlist */}
+          <button
+            onClick={() => setWished((v) => !v)}
+            aria-label="Add to wishlist"
+            className="product-card__wishlist"
+          >
+            <Heart
+              size={16}
+              className={wished ? 'product-card__wishlist-icon--active' : 'product-card__wishlist-icon--inactive'}
+            />
+          </button>
         </div>
 
-        {/* Wishlist */}
-        <button
-          onClick={() => setWished((v) => !v)}
-          aria-label="Add to wishlist"
-          className="product-card__wishlist"
-        >
-          <Heart
-            size={16}
-            className={wished ? 'product-card__wishlist-icon--active' : 'product-card__wishlist-icon--inactive'}
-          />
-        </button>
-      </div>
-
-      {/* Content */}
-      <div className="product-card__body">
+        {/* Content */}
+        <div className="product-card__body">
         {/* Origin */}
         <div className="product-card__origin">
           <MapPin size={11} />
@@ -138,6 +153,14 @@ export default function ProductCard({ product }) {
           </button>
         </div>
       </div>
-    </div>
+      </div>
+
+      <ImageModal
+        isOpen={imageModalOpen}
+        image={product.image}
+        alt={product.name}
+        onClose={() => setImageModalOpen(false)}
+      />
+    </>
   )
 }

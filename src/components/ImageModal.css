@@ -1,0 +1,45 @@
+.image-modal__backdrop {
+  @apply fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-modal__container {
+  @apply relative max-w-4xl w-full bg-white rounded-lg overflow-hidden shadow-2xl;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-modal__close {
+  @apply absolute top-4 right-4 z-10 bg-white/90 hover:bg-white p-2 rounded-full transition-all duration-200 shadow-md hover:shadow-lg;
+}
+
+.image-modal__image {
+  @apply w-full h-auto max-h-[80vh] object-contain;
+}
+
+.image-modal__info {
+  @apply px-6 py-4 bg-earth-50 border-t border-earth-200;
+}
+
+.image-modal__alt {
+  @apply text-center text-earth-800 font-medium;
+}

@@ -15,7 +15,7 @@
   }
 
   .hero-slider__image {
-    @apply w-full h-full object-cover;
+    @apply w-full h-full object-cover object-center;
   }
 
   .hero-slider__overlay--side {

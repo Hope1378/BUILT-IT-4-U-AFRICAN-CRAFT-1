@@ -30,6 +30,18 @@ const categoryCards = [
     image: '/images/uganda/ug7 crafts.jpg',
     count: 6,
   },
+  {
+    label: 'Jewelry & Beads',
+    value: 'women',
+    image: '/images/uganda/ug10 women jewelry.webp',
+    count: '12+',
+  },
+  {
+    label: 'Baskets & Crafts',
+    value: 'children',
+    image: '/images/uganda/ug3 basckets.webp',
+    count: '8+',
+  },
 ]
 
 export default function Home() {

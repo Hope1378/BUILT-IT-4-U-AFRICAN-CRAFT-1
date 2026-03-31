@@ -90,12 +90,14 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="navbar__actions">
-            <button
-              aria-label="Search"
+            <Link
+              to="/shop"
+              aria-label="Search products"
               className={`navbar__icon-button ${toneClass}`}
+              title="Search products"
             >
               <Search size={18} />
-            </button>
+            </Link>
             <button
               type="button"
               aria-label="Open cart"
