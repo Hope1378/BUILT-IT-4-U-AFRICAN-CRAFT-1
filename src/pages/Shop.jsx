@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard'
 import { products } from '../data/products'
 import './Shop.css'
 
-const CATEGORIES = ['all', 'baskets', 'barkcloth', 'jewelry', 'clothing', 'instruments']
+const CATEGORIES = ['all', 'women', 'men', 'children']
 
 const SORT_OPTIONS = [
   { value: 'default',      label: 'Featured' },
@@ -76,7 +76,7 @@ export default function Shop() {
             Kajabo Crafty Shop
           </h1>
           <p className="page-hero__copy">
-            {products.length} Uganda-inspired pieces across basketry, barkcloth decor, jewelry, cultural wear, and instruments.
+            {products.length} Uganda-inspired pieces for women, men, and children - featuring traditional clothing, jewelry, and handcrafted items.
           </p>
         </div>
       </div>

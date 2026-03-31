@@ -6,41 +6,29 @@ import { products, features, testimonials } from '../data/products'
 import './Home.css'
 
 const featuredProducts = products.filter((p) =>
-  ['Buganda Coil Basket', 'Buganda Barkcloth Panel', 'Gomesi Celebration Dress', 'Royal Drum Centerpiece'].includes(p.name),
+  ['Traditional Gomesi Dress - Royal Blue', 'Traditional Kanzu - Cream Heritage', 'Kids Rainbow Beaded Bracelet Set', 'Women\'s Beaded Jewelry Set'].includes(p.name),
 )
 
 const iconMap = { Shield, Globe, Heart, Award }
 
 const categoryCards = [
   {
-    label: 'Baskets',
-    value: 'baskets',
-    image: '/images/uganda/baskets.svg',
-    count: 3,
+    label: 'Women',
+    value: 'women',
+    image: '/images/uganda/ug11 women bitengi.jpg',
+    count: 8,
   },
   {
-    label: 'Barkcloth',
-    value: 'barkcloth',
-    image: '/images/uganda/barkcloth.svg',
-    count: 3,
+    label: 'Men',
+    value: 'men',
+    image: '/images/uganda/ug13men.jpg',
+    count: 6,
   },
   {
-    label: 'Jewelry',
-    value: 'jewelry',
-    image: '/images/uganda/beads.svg',
-    count: 3,
-  },
-  {
-    label: 'Clothing',
-    value: 'clothing',
-    image: '/images/uganda/gomesi.svg',
-    count: 3,
-  },
-  {
-    label: 'Instruments',
-    value: 'instruments',
-    image: '/images/uganda/drums.svg',
-    count: 3,
+    label: 'Children',
+    value: 'children',
+    image: '/images/uganda/ug7 crafts.jpg',
+    count: 6,
   },
 ]
 
@@ -76,9 +64,9 @@ export default function Home() {
             <span className="page-section__eyebrow">
               Browse By Category
             </span>
-            <h2 className="section-title mt-2">Explore Uganda Through Craft</h2>
+            <h2 className="section-title mt-2">Shop by Gender & Age</h2>
             <p className="section-subtitle text-center">
-              Kajabo Crafty brings together Ugandan basketry, barkcloth, beadwork, cultural wear, and royal rhythm pieces.
+              Kajabo Crafty brings together Ugandan cultural wear, jewelry, and handcrafted pieces for women, men, and children.
             </p>
           </div>
           <div className="home__category-grid">
