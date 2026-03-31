@@ -38,21 +38,11 @@ export default function Navbar() {
   }, [location])
 
   useEffect(() => {
-    if (!menuOpen || isMobile === undefined) {
+    if (!menuOpen) {
       return undefined
     }
-
-    // Only lock scroll on desktop; on mobile the fixed overlay prevents scrolling
-    if (!isMobile) {
-      lockBodyScroll()
-    }
-
-    return () => {
-      if (!isMobile) {
-        unlockBodyScroll()
-      }
-    }
-  }, [menuOpen, isMobile])
+    return undefined
+  }, [menuOpen])
 
   const toneClass = isOverlay ? 'navbar__tone--light' : 'navbar__tone--dark'
 
