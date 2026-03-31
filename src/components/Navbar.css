@@ -2,6 +2,14 @@
     @apply transition-all duration-300;
   }
 
+  html.no-scroll,
+  body.no-scroll {
+    overflow: hidden !important;
+    position: fixed;
+    width: 100%;
+    touch-action: none;
+  }
+
   .navbar--overlay {
     @apply absolute top-0 left-0 right-0 z-50;
     background: linear-gradient(to bottom, rgba(30,20,10,0.65) 0%, transparent 100%);

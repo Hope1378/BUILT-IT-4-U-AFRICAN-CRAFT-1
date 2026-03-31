@@ -5,6 +5,14 @@
     max-height: 280px;
   }
 
+  @media (max-width: 767px) {
+    .hero-slider {
+      height: 190px !important;
+      min-height: 190px !important;
+      max-height: 190px !important;
+    }
+  }
+
   @media (min-width: 768px) {
     .hero-slider {
       height: 88vh;
