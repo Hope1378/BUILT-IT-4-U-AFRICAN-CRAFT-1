@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#F7F3EE"/>
+  <circle cx="640" cy="150" r="110" fill="#F5E58E" fill-opacity="0.55"/>
+  <circle cx="170" cy="650" r="130" fill="#F6C5AD" fill-opacity="0.45"/>
+  <ellipse cx="400" cy="655" rx="235" ry="92" fill="#D9C7A9"/>
+  <path d="M225 300C225 235 303 184 400 184C497 184 575 235 575 300V530C575 595 497 646 400 646C303 646 225 595 225 530V300Z" fill="#C2A476"/>
+  <path d="M260 300C260 250 322 214 400 214C478 214 540 250 540 300V520C540 570 478 606 400 606C322 606 260 570 260 520V300Z" fill="#E8BA22" fill-opacity="0.3"/>
+  <path d="M230 325H570" stroke="#8A5E11" stroke-width="12"/>
+  <path d="M230 395H570" stroke="#8A5E11" stroke-width="12"/>
+  <path d="M230 465H570" stroke="#8A5E11" stroke-width="12"/>
+  <path d="M230 535H570" stroke="#8A5E11" stroke-width="12"/>
+  <path d="M270 224C305 178 349 155 400 155C451 155 495 178 530 224" stroke="#724F28" stroke-width="18" stroke-linecap="round"/>
+  <path d="M290 210C320 228 359 238 400 238C441 238 480 228 510 210" stroke="#4F3510" stroke-width="10" stroke-linecap="round"/>
+  <path d="M320 255V596" stroke="#6E4A14" stroke-width="10"/>
+  <path d="M400 245V606" stroke="#6E4A14" stroke-width="10"/>
+  <path d="M480 255V596" stroke="#6E4A14" stroke-width="10"/>
+  <text x="400" y="734" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="700" fill="#5B3D1F">Ugandan Basket Weaving</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" fill="none">
+  <rect width="1400" height="900" fill="#2F1F0F"/>
+  <rect y="620" width="1400" height="280" fill="#6E4A14"/>
+  <circle cx="1160" cy="150" r="110" fill="#E8BA22" fill-opacity="0.85"/>
+  <path d="M0 560C240 490 470 500 700 548C930 596 1160 594 1400 520V620H0V560Z" fill="#8A5E11"/>
+  <rect x="170" y="360" width="250" height="260" rx="18" fill="#C0522A"/>
+  <rect x="205" y="400" width="180" height="120" fill="#F7F3EE"/>
+  <path d="M150 378L295 250L440 378" stroke="#E8BA22" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="560" y="325" width="290" height="295" rx="20" fill="#8B6435"/>
+  <rect x="615" y="385" width="85" height="235" fill="#4F3510"/>
+  <rect x="725" y="385" width="85" height="235" fill="#4F3510"/>
+  <path d="M540 355L705 220L870 355" stroke="#D4A017" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1090" cy="365" r="62" fill="#8B6435"/>
+  <path d="M1008 465H1172L1148 720H1032L1008 465Z" fill="#FFFDF8"/>
+  <path d="M1090 402V722" stroke="#C0522A" stroke-width="8"/>
+  <path d="M1034 430L982 510L1045 560L1070 460L1034 430Z" fill="#E8BA22"/>
+  <path d="M1146 430L1198 510L1135 560L1110 460L1146 430Z" fill="#E8BA22"/>
+  <rect x="258" y="530" width="72" height="72" rx="18" fill="#E8BA22"/>
+  <rect x="355" y="530" width="72" height="72" rx="18" fill="#F7F3EE"/>
+  <circle cx="650" cy="544" r="30" fill="#C0522A"/>
+  <circle cx="732" cy="544" r="30" fill="#E8BA22"/>
+  <circle cx="814" cy="544" r="30" fill="#C0522A"/>
+  <text x="700" y="816" text-anchor="middle" font-family="Georgia,serif" font-size="54" font-weight="700" fill="#FDF3EF">Kajabo Crafty | Uganda</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#FCF7F0"/>
+  <circle cx="150" cy="150" r="110" fill="#F5E58E" fill-opacity="0.45"/>
+  <circle cx="640" cy="635" r="120" fill="#F6C5AD" fill-opacity="0.42"/>
+  <ellipse cx="400" cy="715" rx="210" ry="44" fill="#D9C7A9"/>
+  <circle cx="400" cy="170" r="70" fill="#8B6435"/>
+  <path d="M260 300C260 238 323 210 400 210C477 210 540 238 540 300V660H260V300Z" fill="#C0522A"/>
+  <path d="M262 330C320 362 358 377 400 377C442 377 480 362 538 330" stroke="#F5E58E" stroke-width="18"/>
+  <path d="M316 246L240 360L320 405L360 282L316 246Z" fill="#E8BA22"/>
+  <path d="M484 246L560 360L480 405L440 282L484 246Z" fill="#E8BA22"/>
+  <path d="M330 235H470L448 325H352L330 235Z" fill="#F7F3EE"/>
+  <path d="M260 432H540" stroke="#F7F3EE" stroke-width="16" stroke-dasharray="22 18"/>
+  <path d="M260 522H540" stroke="#F7F3EE" stroke-width="16" stroke-dasharray="22 18"/>
+  <path d="M260 612H540" stroke="#F7F3EE" stroke-width="16" stroke-dasharray="22 18"/>
+  <path d="M400 324V660" stroke="#F7F3EE" stroke-width="12"/>
+  <text x="400" y="742" text-anchor="middle" font-family="Georgia,serif" font-size="44" font-weight="700" fill="#5B3D1F">Gomesi Elegance</text>
+</svg>

@@ -17,7 +17,7 @@ export default function Navbar() {
   const location = useLocation()
   const { totalItems, openCart } = useCart()
   const isHome = location.pathname === '/'
-  const isOverlay = isHome && !scrolled
+  const isOverlay = isHome && !scrolled && !menuOpen
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
