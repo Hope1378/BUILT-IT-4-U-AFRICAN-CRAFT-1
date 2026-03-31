@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, ShoppingBag, Search, ShoppingCart } from 'lucide-react'
 import { useCart } from '../context/CartContext'
@@ -15,7 +15,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
   const location = useLocation()
-  const latestPathRef = useRef(location.pathname)
   const { totalItems, openCart } = useCart()
   const isHome = location.pathname === '/'
   // On mobile: always sticky (never overlay). On desktop: overlay if home + !scrolled
@@ -38,10 +37,6 @@ export default function Navbar() {
   }, [location])
 
   useEffect(() => {
-    latestPathRef.current = location.pathname
-  }, [location.pathname])
-
-  useEffect(() => {
     if (!menuOpen || !isMobile) {
       return undefined
     }
@@ -55,7 +50,7 @@ export default function Navbar() {
       document.body.classList.remove('no-scroll')
       document.body.style.top = ''
 
-      if (latestPathRef.current === lockedPath) {
+      if (window.location.pathname === lockedPath) {
         window.scrollTo(0, scrollY)
       } else {
         window.scrollTo(0, 0)
