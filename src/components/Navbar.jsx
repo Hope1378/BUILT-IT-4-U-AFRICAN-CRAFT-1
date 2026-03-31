@@ -49,7 +49,7 @@ export default function Navbar() {
     : 'navbar__link--active-dark'
 
   return (
-    <header className={`navbar ${isOverlay ? 'navbar--overlay' : 'navbar--solid'}`}>
+    <header className={`navbar ${menuOpen ? 'navbar--menu-open' : isOverlay ? 'navbar--overlay' : 'navbar--solid'}`}>
       <div className="navbar__container">
         <div className="navbar__row">
 
